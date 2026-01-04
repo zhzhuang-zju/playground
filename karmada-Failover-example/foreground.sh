@@ -121,6 +121,9 @@ function copyConfigFilesToNode() {
 kubectl delete node node01
 kubectl taint node controlplane node-role.kubernetes.io/control-plane:NoSchedule-
 
+# initialize known_hosts file
+ssh-keyscan -H ${member_cluster_ip} >> ~/.ssh/known_hosts
+ssh root@${member_cluster_ip} "ssh-keyscan -H ${host_cluster_ip} >> ~/.ssh/known_hosts" &
 # install kind and create member clusters
 installKind
 createCluster
