@@ -6,8 +6,10 @@ set -o pipefail
 
 
 # Source common setup functions and variables
-source ../common-setup.sh
-
+pwd
+ls
+cd ..
+ls
 # variable define
 kind_version=v0.17.0
 host_cluster_ip=172.30.1.2 #host node where Karmada is located
