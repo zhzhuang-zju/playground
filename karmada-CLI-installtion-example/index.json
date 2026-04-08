@@ -4,7 +4,7 @@
     "details": {
       "assets": [
         {
-          "file": "../../scripts/common-setup.sh",
+          "file": "../common-setup.sh",
           "target": "/usr/local/bin/common-setup.sh"
         }
       ],
