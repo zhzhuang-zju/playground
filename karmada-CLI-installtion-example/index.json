@@ -4,7 +4,7 @@
     "details": {
       "assets": {
         "controlplane": [
-          {"file": "../common-setup.sh", "target": "/usr/local/bin", "chmod": "+x"}
+          {"file": "../common-setup.sh", "target": "~/", "chmod": "+x"}
         ]
       },
       "intro": {
