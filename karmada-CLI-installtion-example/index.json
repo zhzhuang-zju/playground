@@ -3,7 +3,7 @@
     "description": "Installing Karmada on Kubernetes through the Karmada CLI",
     "details": {
       "assets": {
-        "host01": [
+        "controlplane": [
           {"file": "../common-setup.sh", "target": "/usr/local/bin", "chmod": "+x"}
         ]
       },
