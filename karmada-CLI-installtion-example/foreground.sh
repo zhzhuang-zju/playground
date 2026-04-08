@@ -6,7 +6,8 @@ set -o pipefail
 
 
 # Source common setup functions and variables
-source "$(dirname "$0")/../common-setup.sh"
+REPO_ROOT=$(dirname "${BASH_SOURCE[0]}")/..
+source "${REPO_ROOT}"/common-setup.sh
 
 # variable define
 kind_version=v0.17.0
