@@ -2,6 +2,12 @@
     "title": "install Karmada through CLI",
     "description": "Installing Karmada on Kubernetes through the Karmada CLI",
     "details": {
+      "assets": [
+        {
+          "file": "../../scripts/common-setup.sh",
+          "target": "/usr/local/bin/common-setup.sh"
+        }
+      ],
       "intro": {
         "text": "intro.md",
         "foreground": "foreground.sh"
